@@ -1,0 +1,345 @@
+COLLEGE NAAME: KINSTON ENGINEERING COLLEGE
+COLLEGE CODE:5113
+DOMAIN:ARTIFICIAL INTELLIGENCE
+PROJECT TITLE:AI BASED DIABETES PREDICTION SYSTEM
+PROJECT MEMBERS:              NAAN MUDHALVAN ID:
+SATHYA P(TEAM LEADER)         511321104089
+SAKTHI S                      511321104084
+SWETHA P                      511321104100
+PRIYADHARSHINI B              511321104074
+
+PROJECT STATEMENT: Develop an AI-powered diabetes prediction system that leverages machine learning algorithms to analyze medical data and predict the likelihood of an individual developing diabetes, providing early risk assessment and personalized preventive measures.
+
+
+
+DESCRIPTION:
+Data Collection in AI-Based Diabetes Prediction System: Data collection involves
+systematically acquiring various types of data from multiple sources, which may include:
+1. Medical Records: This includes information such as patients&#39; historical health records,
+laboratory test results (e.g., blood glucose levels, HbA1c, cholesterol levels), and family
+medical history.
+2. Demographic Information: Data like age, gender, ethnicity, and geographical location
+can be important factors in diabetes prediction.
+3. Lifestyle and Behavioral Data: Collect data on lifestyle choices, such as diet, exercise
+habits, smoking status, alcohol consumption, and stress levels, which can impact
+diabetes risk.
+4. Biometric Data: Measurements like weight, height, body mass index (BMI), waist
+circumference, and blood pressure can provide crucial insights into an individual&#39;s health
+status.
+5. Genetic Information: Genetic data, including information on genetic markers associated
+with diabetes risk, may be included if available and ethically collected.
+6. Dietary Information: Details about an individual&#39;s dietary habits, including the types and
+amounts of food consumed, can be valuable in assessing diabetes risk.
+7. Environmental Factors: Consider environmental factors like pollution levels, climate,
+and urban/rural living conditions, which can influence diabetes risk.
+8. Patient Surveys and Questionnaires: Collecting responses to health-related
+questionnaires or surveys can provide subjective information about an individual&#39;s health
+and lifestyle.
+9. Mobile and Wearable Device Data: If available, data from devices like fitness trackers
+and glucose monitors can be integrated into the prediction system.
+10. Electronic Health Records (EHRs): For healthcare institutions, extracting data from
+electronic health records can provide a wealth of patient information.
+11. Research Databases: Access to publicly available research datasets related to diabetes
+can supplement your data collection efforts.
+Once collected, this data is typically organized, cleaned, and preprocessed to ensure its quality
+and suitability for use in training and evaluating machine learning models. It&#39;s important to handle
+sensitive medical data with the utmost care, ensuring compliance with relevant data privacy
+regulations such as HIPAA (in the United States) or GDPR (in the European Union) to protect
+patient privacy and confidentiality throughout the data collection process.
+
+Data Preprocessing in AI-Based Diabetes Prediction System: Data preprocessing
+encompasses several essential tasks and procedures, including:
+1. Data Cleaning: Identify and handle missing or erroneous data points. Common
+techniques include filling missing values (imputation) or removing rows or columns with
+too many missing values. Outliers may also be addressed during this step.
+2. Data Transformation: Convert data into a more appropriate format for analysis. This
+may involve encoding categorical variables into numerical values using techniques like
+one-hot encoding or label encoding.
+3. Data Scaling/Normalization: Ensure that numerical features have a consistent scale to
+prevent certain features from dominating others during model training. Common
+normalization techniques include min-max scaling or z-score scaling (standardization).
+4. Feature Selection: Identify and select the most relevant features (attributes or variables)
+for diabetes prediction. Feature selection techniques help reduce dimensionality and
+improve model efficiency and interpretability.
+
+5. Feature Engineering: Create new features or variables based on domain knowledge or
+data analysis. For example, you might calculate the body mass index (BMI) from height
+and weight data, or create interaction terms between features.
+6. Handling Imbalanced Data: If the dataset is imbalanced (e.g., significantly more non-
+diabetic cases than diabetic cases), employ techniques like oversampling (creating more
+samples of the minority class), undersampling (reducing samples of the majority class),
+or using synthetic data generation methods to balance the classes.
+7. Data Splitting: Divide the dataset into training, validation, and test sets. This separation
+ensures that you can train and tune your model on one portion, validate its performance
+on another, and assess its final performance on a third, unseen portion.
+8. Handling Time-Series Data: If your dataset contains temporal data (e.g., blood glucose
+measurements over time), consider techniques like time windowing or aggregation to
+create features suitable for prediction.
+9. Dealing with Data Privacy and Security: Implement data anonymization and encryption
+techniques to protect sensitive patient information in compliance with healthcare data
+privacy regulations like HIPAA or GDPR.
+Data preprocessing is a critical step in building an effective diabetes prediction model. The
+quality of the data and how well it is prepared can significantly impact the model&#39;s accuracy and
+generalization to new, unseen data. Careful consideration of each preprocessing step is essential
+to ensure that the machine learning model can provide valuable insights and accurate predictions
+in a clinical setting.
+
+Feature Selection in AI-Based Diabetes Prediction System: Feature selection involves
+several key aspects:
+1. Relevance: It identifies which features have a direct impact on the prediction task. In the
+context of diabetes prediction, relevant features might include variables like blood
+glucose levels, family history of diabetes, BMI (Body Mass Index), and age, as these are
+known to be associated with diabetes risk.
+2. Redundancy: It identifies and removes features that convey similar or redundant
+information. By eliminating redundancy, you can reduce model complexity and overfitting
+while retaining the essential information.
+3. Dimensionality Reduction: Feature selection helps reduce the dimensionality of the
+dataset by selecting a subset of the most informative features. This can enhance model
+training efficiency and reduce computational resources.
+4. Interpretability: A model built with a smaller set of meaningful features is often more
+interpretable, making it easier for healthcare professionals to understand and trust the
+model&#39;s predictions.
+5. Model Generalization: By focusing on relevant features, feature selection can improve a
+model&#39;s ability to generalize well to new, unseen data, which is crucial for real-world
+applications.
+Common techniques for feature selection in a diabetes prediction system include:
+ Filter Methods: These methods assess the relevance of features independently of the
+machine learning model. Popular filter methods include correlation analysis, chi-squared
+tests, and mutual information.
+ Wrapper Methods: These methods evaluate feature subsets by training and testing the
+model with different combinations of features. Techniques like forward selection,
+backward elimination, and recursive feature elimination (RFE) fall into this category.
+ Embedded Methods: Embedded methods incorporate feature selection as part of the
+model training process. For instance, decision tree-based algorithms can compute
+feature importances during training, allowing you to select the most relevant features.
+
+ Regularization Techniques: Techniques like L1 regularization (Lasso) encourage
+sparsity in feature weights, effectively selecting a subset of features while training linear
+models.
+The choice of feature selection method should depend on the specific characteristics of your
+dataset, the machine learning algorithm you intend to use, and your objectives. It&#39;s important to
+note that feature selection should be performed in conjunction with other data preprocessing
+steps, such as data cleaning and normalization, to ensure that the selected features contribute to
+a reliable and accurate diabetes prediction model.
+
+Model Selection in AI-Based Diabetes Prediction System: Model selection encompasses the
+following key aspects:
+1. Choice of Model Algorithms: It involves selecting a set of machine learning or
+statistical algorithms that are suitable for solving the diabetes prediction problem.
+Common algorithms include logistic regression, decision trees, random forests,
+support vector machines, neural networks, and gradient boosting models.
+2. Hyperparameter Tuning: Model selection often includes tuning hyperparameters
+associated with the chosen algorithms. Hyperparameters are settings that affect the
+behavior of the model, such as the learning rate in neural networks or the maximum
+depth of decision trees. Techniques like grid search or random search are commonly
+used to find the optimal hyperparameters.
+3. Model Evaluation: Once a set of models with different algorithms and
+hyperparameters is trained, they are evaluated using appropriate metrics on a
+validation dataset. Metrics may include accuracy, precision, recall, F1-score, ROC
+AUC, and others, depending on the problem&#39;s requirements and characteristics.
+4. Cross-Validation: Cross-validation techniques, such as k-fold cross-validation, help
+assess a model&#39;s performance robustness by dividing the dataset into multiple subsets
+for training and testing. This process helps to estimate how well a model generalizes
+to unseen data.
+5. Comparative Analysis: Model selection involves comparing the performance of
+different models in terms of their predictive accuracy and other relevant criteria. It
+may also consider factors such as model complexity and interpretability.
+6. Regularization: Model selection may involve choosing between regularized and non-
+regularized models. Regularization techniques, like L1 (Lasso) or L2 (Ridge)
+regularization, can help prevent overfitting and improve model generalization.
+7. Interpretability: Depending on the context of diabetes prediction (e.g., for clinical
+decision-making), model selection may prioritize interpretable models like logistic
+regression or decision trees to ensure that healthcare professionals can understand and
+trust the model&#39;s predictions.
+8. Ensemble Methods: Model selection may involve considering ensemble methods like
+random forests or gradient boosting, which combine multiple base models to improve
+predictive performance.
+The choice of the model for a diabetes prediction system should take into account the specific
+characteristics of the dataset, the available computational resources, and the objectives of the
+system. Additionally, it&#39;s important to evaluate models thoroughly and ensure that the
+selected model aligns with the practical requirements and constraints of the healthcare
+domain, such as patient safety, interpretability, and regulatory compliance. Model selection is
+
+often an iterative process, involving experimentation and fine-tuning to achieve the best
+results.
+Evaluation in AI-Based Diabetes Prediction System: The evaluation process involves several
+key components:
+1. Metric Selection: Choosing appropriate evaluation metrics that measure the
+performance of the predictive model(s) in the context of diabetes prediction. Common
+evaluation metrics include:
+ Accuracy: The proportion of correct predictions.
+ Precision: The ratio of true positive predictions to the total positive predictions,
+measuring the model&#39;s ability to correctly identify diabetes cases.
+ Recall (Sensitivity): The ratio of true positive predictions to the total actual
+positive cases, measuring the model&#39;s ability to identify all diabetes cases.
+ F1-Score: The harmonic mean of precision and recall, which provides a balance
+between the two.
+ ROC AUC (Receiver Operating Characteristic Area Under the Curve): A
+measure of the model&#39;s ability to distinguish between positive and negative
+cases.
+ Specificity: The ratio of true negative predictions to the total actual negative
+cases.
+ Mean Absolute Error (MAE) or Root Mean Square Error (RMSE): If the
+prediction is done as a regression task (e.g., predicting blood glucose levels),
+these metrics can be used to evaluate the prediction accuracy.
+
+2. Validation Dataset: Using a separate dataset (not used during model training) to
+evaluate the model&#39;s performance. This is typically done to assess how well the model
+generalizes to new, unseen data.
+3. Cross-Validation: Employing cross-validation techniques, such as k-fold cross-
+validation, to ensure robust evaluation and to estimate how well the model is expected to
+perform on different data splits.
+4. Confusion Matrix: Creating a confusion matrix to visualize the model&#39;s performance,
+especially in binary classification problems (diabetic or non-diabetic). The matrix displays
+true positives, true negatives, false positives, and false negatives.
+5. Model Calibration: Assessing the model&#39;s calibration to determine if the predicted
+probabilities align with the actual outcomes. Calibration plots and calibration metrics, like
+Brier score, may be used.
+6. Comparative Analysis: Comparing the performance of different models or algorithms to
+select the best-performing one based on the chosen evaluation metrics.
+7. Interpretability and Clinical Relevance: Evaluating the model&#39;s interpretability and
+clinical relevance to ensure that healthcare professionals can understand and trust the
+model&#39;s predictions.
+8. Ethical Considerations: Evaluating the fairness and potential biases of the model&#39;s
+predictions, especially with respect to different demographic groups, to ensure that the
+system does not perpetuate disparities in healthcare outcomes.
+9. Regulatory Compliance: Ensuring that the model&#39;s performance aligns with healthcare
+regulations and standards, such as HIPAA (in the United States) or GDPR (in the
+European Union), to protect patient data and privacy.
+10. User Feedback: Gathering feedback from healthcare professionals and end-users to
+incorporate real-world insights and improvements into the model and system.
+The evaluation phase is crucial for determining whether the AI-based diabetes prediction system
+is ready for deployment in a clinical setting. Continuous monitoring and evaluation of the
+system&#39;s performance over time are essential to ensure that it remains accurate and relevant
+
+PROGRAM:
+IN[1]:#Let's start with importing necessary libraries
+import pandas as pd 
+import numpy as np 
+from sklearn.preprocessing import StandardScaler 
+#from sklearn.linear_model  import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.svm import SVC
+from sklearn.naive_bayes import BernoulliNB
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, confusion_matrix
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+#read the data file
+data = pd.read_csv("/kaggle/input/diabetes-data-set/diabetes.csv")
+data.head()
+
+[2]
+
+	Pregnancies	Glucose	BloodPressure	SkinThickness	Insulin	BMI	DiabetesPedigreeFunction	Age	Outcome
+0	6	148	72	35	0	33.6	0.627	50	1
+1	1	85	66	29	0	26.6	0.351	31	0
+2	8	183	64	0	0	23.3	0.672	32	1
+3	1	89	66	23	94	28.1	0.167	21	0
+4	0	137	40	35	168	43.1	2.288	33	1
+
+data.isnull().sum()
+[3]
+
+Pregnancies                 0
+Glucose                     0
+BloodPressure               0
+SkinThickness               0
+Insulin                     0
+BMI                         0
+DiabetesPedigreeFunction    0
+Age                         0
+Outcome                     0
+dtype: int64
+
+We can see there few data for columns Glucose , Insulin, skin thickenss, BMI and Blood Pressure which have value as 0. That's not possible,right? you can do a quick search to see that one cannot have 0 values for these. Let's deal with that. we can either remove such data or simply replace it with their respective mean values. Let's do the latter.
+
+#here few misconception is there lke BMI can not be zero, BP can't be zero, glucose, insuline can't be zero so lets try to fix it
+# now replacing zero values with the mean of the column
+data['BMI'] = data['BMI'].replace(0,data['BMI'].mean())
+data['BloodPressure'] = data['BloodPressure'].replace(0,data['BloodPressure'].mean())
+data['Glucose'] = data['Glucose'].replace(0,data['Glucose'].mean())
+data['Insulin'] = data['Insulin'].replace(0,data['Insulin'].mean())
+data['SkinThickness'] = data['SkinThickness'].replace(0,data['SkinThickness'].mean())
+​
+​
+
+data.describe()
+[4]
+Pregnancies	Glucose	BloodPressure	SkinThickness	Insulin	BMI	DiabetesPedigreeFunction	Age	Outcome
+count	768.000000	768.000000	768.000000	768.000000	768.000000	768.000000	768.000000	768.000000	768.000000
+mean	3.845052	121.681605	72.254807	26.606479	118.660163	32.450805	0.471876	33.240885	0.348958
+std	3.369578	30.436016	12.115932	9.631241	93.080358	6.875374	0.331329	11.760232	0.476951
+min	0.000000	44.000000	24.000000	7.000000	14.000000	18.200000	0.078000	21.000000	0.000000
+25%	1.000000	99.750000	64.000000	20.536458	79.799479	27.500000	0.243750	24.000000	0.000000
+50%	3.000000	117.000000	72.000000	23.000000	79.799479	32.000000	0.372500	29.000000	0.000000
+75%	6.000000	140.250000	80.000000	32.000000	127.250000	36.600000	0.626250	41.000000	1.000000
+max	17.000000	199.000000	122.000000	99.000000	846.000000	67.100000	2.420000	81.000000	1.000000
+
+#now we have dealt with the 0 values and data looks better. But, there still are outliers present in some columns.lets visualize it
+fig, ax = plt.subplots(figsize=(15,10))
+sns.boxplot(data=data, width= 0.5,ax=ax,  fliersize=3)
+<Axes: >
+
+
+data.head()
+Pregnancies	Glucose	BloodPressure	SkinThickness	Insulin	BMI	DiabetesPedigreeFunction	Age	Outcome
+0	6	148.0	72.0	35.000000	79.799479	33.6	0.627	50	1
+1	1	85.0	66.0	29.000000	79.799479	26.6	0.351	31	0
+2	8	183.0	64.0	20.536458	79.799479	23.3	0.672	32	1
+3	1	89.0	66.0	23.000000	94.000000	28.1	0.167	21	0
+4	0	137.0	40.0	35.000000	168.000000	43.1	2.288	33	1
+
+#segregate the dependent and independent variable
+X = data.drop(columns = ['Outcome'])
+y = data['Outcome']
+add Codeadd Markdown
+# separate dataset into train and test
+X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.25,random_state=0)
+X_train.shape, X_test.shape
+((576, 8), (192, 8))
+
+import pickle
+##standard Scaling- Standardization
+def scaler_standard(X_train, X_test):
+    #scaling the data
+    scaler = StandardScaler()
+    X_train_scaled = scaler.fit_transform(X_train)
+    X_test_scaled = scaler.transform(X_test)
+    
+    #saving the model
+    file = open('standardScalar.pkl','wb')
+    pickle.dump(scaler,file)
+    file.close()
+    
+    return X_train_scaled, X_test_scaled 
+X_train_scaled, X_test_scaled = scaler_standard(X_train, X_test)
+
+X_train_scaled
+array([[ 1.50755225, -1.09947934, -0.89942504, ..., -1.45561965,
+        -0.98325882, -0.04863985],
+       [-0.82986389, -0.1331471 , -1.23618124, ...,  0.09272955,
+        -0.62493647, -0.88246592],
+       [-1.12204091, -1.03283573,  0.61597784, ..., -0.03629955,
+         0.39884168, -0.5489355 ],
+       ...,
+       [ 0.04666716, -0.93287033, -0.64685789, ..., -1.14021518,
+        -0.96519215, -1.04923114],
+       [ 2.09190629, -1.23276654,  0.11084355, ..., -0.36604058,
+        -0.5075031 ,  0.11812536],
+       [ 0.33884418,  0.46664532,  0.78435594, ..., -0.09470985,
+         0.51627505,  2.953134  ]])
+
+## Decision Tree Model Training With Hyperparameter Tuning
+import warnings
+warnings.filterwarnings('ignore')
+add Codeadd Markdown
+parameter={
+ 'criterion':['gini','entropy','log_loss'],
+  'splitter':['best','random'],
+  'max_depth':[1,2,3,4,5],
+  'max_features':['auto', 'sqrt', 'log2']
+    
+}
+
